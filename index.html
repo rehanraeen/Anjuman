@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />  <link rel="stylesheet" href="style.css">
+  <title>Anjuman Anwar-E-Mustafa</title>
+</head>
+<body>
+
+  <!-- head -->
+  <header class="head">
+    <div class="logo">
+      <img src="./image/new-madina-logo.png" alt="">
+      <img src="./image/Anjuman-logo.png" alt="">
+    </div>
+    <div class="navbar">
+      <a href="">home</a>  
+      <a href="#about-us">about</a>  
+      <a href="#our-work">our work</a>  
+      <a href="#contact-us">contact us</a>  
+    </div>
+  </header>
+
+  <!-- main content -->
+  <mian class="content">
+    <section id="img">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./image/madina-1.jpg" alt="error">
+          </div>
+          <div class="swiper-slide">
+            <img src="./image/madina-2.jpg" alt="error">
+          </div>
+          <div class="swiper-slide">
+            <img src="./image/makka.jpg" alt="error">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="our-work">
+      <div class="heading">
+        <h1>OUR WORK</h1>
+      </div>
+    </section>
+
+    <section id="about-us">
+      <div class="about-section">
+        <h1>ABOUT US</h1>
+        <p>ANJUMAN ANWAR-EMUSTAFA</p>
+        <p>Anjuman Anwar-E-Mustafa is a non political and Non Profit Registered organisation located in Mumbai. </p>
+      </div>
+    </section>
+
+    <section id="contact-us">
+      <div class="contact-section">
+        <h1>CONTACT US</h1>
+        <div>
+        <p>Nizam Compound, Wire Galli,</p>
+        <p>3 no Khadi, Link Road,</p>
+        <p>Sakinak, Mumbai 400 072,</p>
+        <p>Maharashtra INDIA</p>
+      </div>
+      <div>
+        <p>+91 12345 67890</p>
+        <p>aamws@gmail.com</p>
+      </div>
+      </div>
+    </section>
+
+  </mian>
+
+  <!-- footer -->
+  <footer class="footer">
+      <p>Anjuman Anwar-E-Mustafa © 2023 All Rights Reserved. | Privacy Policy</p>
+  </footer>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      grabCursor: true,
+      });
+    </script>
+</body>
+</html>
