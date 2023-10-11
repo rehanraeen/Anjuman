@@ -78,6 +78,16 @@ body::-webkit-scrollbar{
   background-image: url(./image/mm.avif);
 }
 
+#our-work{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url(./image/mm.avif);
+}
+
+
+
 #about-us{
   display: flex;
   justify-content: center;
@@ -145,4 +155,158 @@ body::-webkit-scrollbar{
   font-size: small;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+ /* CSS styles for screens with a width of 768px or less */
+
+@media screen and (max-width: 768px) {
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .head {
+    text-align: center;
+    background-color: #f2f2f3;
+  }
+  
+  .head .logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(./image/doted.gif);
+    margin: 10px;
+    padding: 10px;
+    height: 170px;
+  }
+  
+  .head .logo img {
+    width: 100%; /* Ensure the image is responsive */
+  }
+
+  .logo img:nth-child(1) {
+    display: none; /* Hide the second img element when the screen is 768px or smaller */
+  }
+  
+  .head .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2a7174;
+    height: 40px;
+  }
+  
+  .head .navbar a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .content {
+  }
+  
+  .content #img {
+    max-height: 300px; /* Adjust the height as needed for mobile */
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 16px; /* Adjust the font size for mobile */
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    max-height: 250px; /* Adjust the height as needed for mobile */
+    object-fit: cover;
+  }
+  
+  .main-content {
+    height: 300px; /* Adjust the height as needed for mobile */
+    background-image: url(./image/mm.avif);
+  }
+  
+  #our-work,
+  #about-us {
+    height: 300px; /* Adjust the height as needed for mobile */
+    background-image: url(./image/mm.avif);
+  }
+  
+  .about-section {
+    background-color: #f2f2f3;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .about-section h1 {
+    color: #2a7174;
+    padding: 6px;
+    text-transform: uppercase;
+    font-size: 20px; /* Adjust the font size for mobile */
+  }
+  
+  .about-section p {
+    font-size: 14px; /* Adjust the font size for mobile */
+    padding: 3px;
+  }
+  
+  #contact-us {
+    background-color: #2a7174;
+    padding: 10px;
+  }
+  
+  .contact-section h1 {
+    width: fit-content;
+    color: black;
+    padding: 6px;
+    text-transform: uppercase;
+    font-size: 20px; /* Adjust the font size for mobile */
+  }
+  
+  .contact-section p {
+    font-size: 12px; /* Adjust the font size for mobile */
+    color: white;
+  }
+  
+  .contact-section {
+    display: flex;
+    flex-direction: column; /* Change to a vertical layout for mobile */
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column; /* Change to a vertical layout for mobile */
+    justify-content: center;
+    align-items: center;
+    background-color: #2a7174;
+    height: 50px;
+  }
+  
+  .footer p {
+    font-size: 10px; /* Adjust the font size for mobile */
+    color: white;
+  }
+  
 }
