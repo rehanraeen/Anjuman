@@ -9,6 +9,8 @@
 body::-webkit-scrollbar{
   display: none;
 }
+
+
 .head {
   height: fit-content;
   text-align: center;
@@ -56,6 +58,7 @@ body::-webkit-scrollbar{
 }
 
 .swiper-slide {
+ 
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -71,25 +74,70 @@ body::-webkit-scrollbar{
   object-fit: cover;
 }
 .main-content{
-  height: 500px;
   background-image: url(./image/mm.avif);
 }
 
 #our-work{
-  display: flex;
+ display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 500px;
+  height: 100vh;
   background-image: url(./image/mm.avif);
 }
 
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px; /* Adjust the padding as needed */
+  text-align: center;
+}
 
+.heading h1 {
+  font-size: 35px;
+  margin: 0; /* Remove default margin for <h1> */
+}
+
+.container{
+  display:flex;
+  column-gap:20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .box{
+  padding-top: 75px;
+  background-color: #2a7174;
+  height: 300px;
+  width:300px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box h1{
+  color: white;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.box p{
+  color: white;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 #about-us{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 100vh;
   background-image: url(./image/mm.avif);
 }
 
@@ -173,6 +221,7 @@ body::-webkit-scrollbar{
   .head {
     text-align: center;
     background-color: #f2f2f3;
+    
   }
   
   .head .logo {
@@ -180,9 +229,9 @@ body::-webkit-scrollbar{
     justify-content: space-evenly;
     align-items: center;
     background-image: url(./image/doted.gif);
-    margin: 10px;
+    
     padding: 10px;
-    height: 170px;
+    height: 180px;
   }
   
   .head .logo img {
@@ -241,7 +290,43 @@ body::-webkit-scrollbar{
     background-image: url(./image/mm.avif);
   }
   
-  #our-work,
+  #our-work {
+    height: auto;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .container .box {
+    height: auto;
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+
+  .box:hover {
+    transform: scale(1.1);
+  }
+
+  .box h1 {
+    font-size: 18px;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+
+  #contact-us {
+    padding: 20px;
+  }
+
   #about-us {
     height: 300px; /* Adjust the height as needed for mobile */
     background-image: url(./image/mm.avif);
@@ -263,7 +348,7 @@ body::-webkit-scrollbar{
   }
   
   .about-section p {
-    font-size: 14px; /* Adjust the font size for mobile */
+    font-size: 12px; /* Adjust the font size for mobile */
     padding: 3px;
   }
   
